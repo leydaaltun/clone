@@ -24,14 +24,40 @@
     text-align-last: center;
 }
 
-.InputTop {
-    padding-top: 11px;
-}
-
 .row {
     margin-top: 50px;
 }
 
 .card {
     display: table-cell;
+}
+
+.tekTik {
+    background-image: url(./tektık.svg);
+}
+
+.iade {
+    background-image: url(./kolayiade.svg);
+}
+
+.mobile {
+    background-image: url(./cebinde.svg);
+}
+
+.teslimat {
+    background-image: url(./bugünteslimat.svg);
+}
+
+.tekTik,
+.iade,
+.mobile,
+.teslimat {
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 45px;
+    background-position: bottom;
+}
+
+.btn-group {
+    width: 100%;
 }
