@@ -31,3 +31,7 @@
 .row {
     margin-top: 50px;
 }
+
+.card {
+    display: table-cell;
+}
