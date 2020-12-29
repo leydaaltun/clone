@@ -1,0 +1,33 @@
+.logo {
+    background-image: url(./logo.png\ -\ Kısayol.lnk);
+    background-repeat: no-repeat;
+    width: 52%;
+    height: 45px;
+    background-position: center;
+}
+
+.login {
+    background-image: url(./user.svg\ -\ Kısayol.lnk);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 45px;
+}
+
+.cart {
+    background-image: url(./cart.svg\ -\ Kısayol.lnk);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 45px;
+}
+
+.search {
+    text-align-last: center;
+}
+
+.InputTop {
+    padding-top: 11px;
+}
+
+.row {
+    margin-top: 50px;
+}
