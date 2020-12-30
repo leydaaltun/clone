@@ -61,7 +61,8 @@
     width: 100%;
 }
 
-.TopLinkUl {
+.TopLinkUl,
+.LinkUl {
     display: flex;
     list-style-type: none;
     font-weight: 700;
@@ -266,6 +267,17 @@ a {
     margin-top: 50px;
 }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+    color: #919191;
+}
+
+h5 {
+    font-size: 14px;
+    line-height: 1.2;
+}
+
 .soru,
 .call,
 .Or,
@@ -299,6 +311,35 @@ a {
     margin-top: 50px;
 }
 
+.MiddleLeft {
+    display: flex;
+}
+
+.FooterEnd {
+    background-image: url(./footer.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 116px;
+    margin-bottom: 80px;
+}
+
+.BottomNav {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.BottomNav,
+.a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 
 /*for mobile*/
 
@@ -307,7 +348,8 @@ a {
     .RightNav,
     .ColorfulBand,
     .NavDeskop,
-    .Logo {
+    .Logo,
+    .FooterSolutionCenterDesk {
         display: none;
     }
     .search {
