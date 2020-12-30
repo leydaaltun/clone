@@ -318,7 +318,7 @@ h5 {
 .FooterEnd {
     background-image: url(./footer.png);
     background-repeat: no-repeat;
-    width: 100%;
+    width: 50%;
     height: 116px;
     margin-bottom: 80px;
 }
@@ -338,6 +338,10 @@ h5 {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.MainSlider {
+    display: none;
 }
 
 
