@@ -1,9 +1,10 @@
-.logo {
+.logo,
+.Logo {
     background-image: url(./logo.png\ -\ Kısayol.lnk);
     background-repeat: no-repeat;
     width: 52%;
     height: 45px;
-    background-position: center;
+    background-position: top;
 }
 
 .login {
@@ -20,32 +21,28 @@
     height: 45px;
 }
 
-.search {
-    text-align-last: center;
-}
-
-.row {
-    margin-top: 50px;
-}
-
 .card {
     display: table-cell;
 }
 
+.InputTop {
+    height: 45px;
+}
+
 .tekTik {
-    background-image: url(./tektık.svg);
+    background-image: url(./tektık.png);
 }
 
 .iade {
-    background-image: url(./kolayiade.svg);
+    background-image: url(./iade.png);
 }
 
 .mobile {
-    background-image: url(./cebinde.svg);
+    background-image: url(./mobil.png);
 }
 
 .teslimat {
-    background-image: url(./bugünteslimat.svg);
+    background-image: url(./teslim.png);
 }
 
 .tekTik,
@@ -54,10 +51,307 @@
 .teslimat {
     background-repeat: no-repeat;
     width: 50%;
-    height: 45px;
+    height: 143px;
     background-position: bottom;
+    background-position-x: center;
+    background-position-y: -28px;
 }
 
 .btn-group {
     width: 100%;
+}
+
+.TopLinkUl {
+    display: flex;
+    list-style-type: none;
+    font-weight: 700;
+    font-size: 10px;
+    color: #7b7b7b;
+    padding-inline-start: 248px !important;
+}
+
+li {
+    padding-right: 22px;
+}
+
+.TopHeader {
+    margin: 15px 0 0 0;
+}
+
+.women {
+    color: red;
+}
+
+.MyCart {
+    width: 120px;
+    height: 45px;
+    border: 1px solid #919191;
+    background-color: #919191;
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.LogIn {
+    width: 136px;
+    height: 45px;
+    border: 1px solid #919191;
+    background-image: url(./user.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+}
+
+input {
+    border: 1px solid #919191 !important;
+}
+
+.InputSearch {
+    background-color: #919191 !important;
+    color: #fff !important;
+    line-height: 1.07;
+    font-size: 15px;
+    letter-spacing: -.24px;
+    font-weight: 600;
+    width: 54px;
+}
+
+.InputImg {
+    background-image: url(./sersch.png);
+    background-repeat: no-repeat;
+    padding-left: 47px !important;
+    background-position-x: 6px;
+    background-position-y: center;
+}
+
+ ::placeholder {
+    font-size: 13px!important;
+    font-weight: 600!important;
+    color: #d3cdcd!important;
+}
+
+.giris {
+    font-size: 12px;
+    line-height: 1;
+    display: block;
+    color: #484848;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.or {
+    font-size: 9px;
+    line-height: 1.4;
+    display: block;
+    font-size: 10px;
+    color: #484848;
+    white-space: nowrap;
+}
+
+.CartItemCount {
+    background-image: url(./shop.png);
+    background-repeat: no-repeat;
+}
+
+.ColorfulBand {
+    width: 100%;
+    height: 8px;
+    display: inline-block;
+}
+
+.ColorfulBand-7622da {
+    background-color: #7622da;
+    height: 8px;
+    width: 9%;
+    display: inline-block;
+}
+
+.ColorfulBand-47c6eb {
+    background-color: #47c6eb;
+    height: 8px;
+    width: 18%;
+    display: inline-block;
+}
+
+.ColorfulBand-ed5f1f {
+    background-color: #ed5f1f;
+    height: 8px;
+    width: 31%;
+    display: inline-block;
+}
+
+.ColorfulBand-f59f28 {
+    background-color: #f59f28;
+    height: 8px;
+    width: 15%;
+    display: inline-block;
+}
+
+.ColorfulBand-6b1e5b {
+    background-color: #6b1e5b;
+    height: 8px;
+    width: 13%;
+    display: inline-block;
+}
+
+.ColorfulBand-45b794 {
+    background-color: #4bb794;
+    height: 8px;
+    width: 12%;
+    display: inline-block;
+}
+
+.NavDeskop {
+    display: inline-flex;
+}
+
+.dropdown-toggle {
+    white-space: normal !important;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.btn-secondary {
+    height: 56px;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: -.28px;
+    color: #6c757d;
+    background-color: #fff;
+    border: none !important;
+    font-weight: 600;
+}
+
+.first,
+.second {
+    padding-top: 15px;
+}
+
+.btn-secondary:focus {
+    background-color: #fff;
+    color: orangered;
+}
+
+.SlickSlider {
+    height: 55px;
+    width: 100%;
+    margin-bottom: 50px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.FooterHeader {
+    margin-top: 25px;
+}
+
+.FooterHeadLink {
+    float: right;
+    text-align: end;
+}
+
+.Logo {
+    background-position: left;
+}
+
+a {
+    text-decoration: none;
+    color: gray
+}
+
+.FooterTop {
+    margin-top: 50px;
+}
+
+.soru,
+.call,
+.Or,
+.Call {
+    padding: 0 16px 16px;
+    text-align: center;
+    line-height: 1.2;
+    font-family: "Helvetica";
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.number {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #484848;
+}
+
+.whatsapp {
+    margin: 16px auto;
+    position: relative;
+    padding-left: 36px;
+    padding-top: 4px;
+    color: #484848;
+    text-align: center;
+}
+
+.FooterSolutionCenter {
+    margin-top: 50px;
+}
+
+
+/*for mobile*/
+
+@media screen and (max-width: 780px) {
+    .TopLink,
+    .RightNav,
+    .ColorfulBand,
+    .NavDeskop,
+    .Logo {
+        display: none;
+    }
+    .search {
+        width: 100%;
+    }
+    .FooterHeadLink {
+        float: left;
+        text-align: start;
+        margin-bottom: 20px;
+    }
+    .FooterTop {
+        display: none;
+    }
+}
+
+
+/*for deskop*/
+
+@media (min-width: 1200px) {
+    .BottomNav {
+        display: none;
+    }
+    input {
+        height: 45px;
+    }
+    .logo {
+        background-position: center;
+        padding-right: 0;
+    }
+    .search {
+        padding-left: 0;
+    }
+    h2 {
+        font-size: 25px;
+        display: contents;
+    }
+    .tekTik,
+    .iade,
+    .mobile,
+    .teslimat {
+        height: 245px;
+    }
+    .FooterTopMobile,
+    .FooterSolutionCenter {
+        display: none !important;
+    }
 }
