@@ -30,7 +30,12 @@
 }
 
 .card {
-    display: table-cell;
+    display: inline-table;
+    margin-right: 20px;
+}
+
+.card-body {
+    display: contents;
 }
 
 .InputTop {
@@ -294,23 +299,39 @@ input {
 }
 
 .BillboardDeskop {
-    display: contents;
+    display: none;
 }
 
 .BillboardMobile {
     display: flex;
+    display: none;
 }
 
 .BannerColumnMain {
     border-radius: 5px;
 }
 
+.CardSlider {
+    margin-top: 50px;
+}
+
 .SlickSlider {
     height: 55px;
     width: 100%;
-    margin-bottom: 50px;
     overflow: hidden;
     margin-top: 20px;
+    display: none;
+}
+
+.CardHeader {
+    display: grid;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.DealOfTheDay {
+    display: flex;
+    overflow: scroll;
 }
 
 .FooterHeader {
@@ -421,8 +442,34 @@ h5 {
     right: 0;
 }
 
-.MainSlider {
+
+/*.MainSlider {
     display: none;
+}*/
+
+.RightNavMobile {
+    display: flex;
+    align-items: center;
+}
+
+.MyCartMobile {
+    background-image: url(./iconmonstr-shopping-cart-5.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    width: 50%;
+    height: 50px;
+    background-color: #fff;
+}
+
+.MyProfileMobile {
+    background-image: url(./iconmonstr-user-circle-thin\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    width: 50%;
+    height: 50px;
+    background-color: #fff;
 }
 
 
@@ -435,7 +482,9 @@ h5 {
     .NavDeskop,
     .Logo,
     .FooterSolutionCenterDesk,
-    .BillboardDeskop {
+    .BillboardDeskop,
+    .HeaderDeskop,
+    .carousel-caption {
         display: none;
     }
     .search {
@@ -450,7 +499,8 @@ h5 {
         display: none;
     }
     .logo {
-        margin-bottom: 20px;
+        background-size: 60%;
+        background-position: center;
     }
     .BannerColumnMain {
         width: 100px;
@@ -461,14 +511,25 @@ h5 {
     .ContactButton {
         left: 0;
     }
+    .carousel-indicators {
+        position: inherit;
+        margin: 0 0 25px 0!important;
+        overflow: scroll !important;
+        white-space: pre;
+        display: -webkit-box;
+    }
+    .ButtonSlider {
+        width: max-content;
+    }
 }
 
 
 /*for deskop*/
 
-@media (min-width: 1200px) {
+@media (min-width: 780px) {
     .BottomNav,
-    .BillboardMobile {
+    .BillboardMobile,
+    .HeaderMobile {
         display: none;
     }
     input {
@@ -483,7 +544,7 @@ h5 {
     }
     h2 {
         font-size: 25px;
-        display: contents;
+        display: inline-table;
     }
     .tekTik,
     .iade,
@@ -494,5 +555,63 @@ h5 {
     .FooterTopMobile,
     .FooterSolutionCenter {
         display: none !important;
+    }
+    .MainSlider {
+        display: block;
+        margin-top: 50px;
+    }
+    .carousel-indicators {
+        top: 0 !important;
+    }
+    .carousel-caption {
+        background-color: rgba(240, 214, 180, 0.4);
+        border-radius: 24px;
+        width: max-content;
+        position: absolute;
+        bottom: auto;
+        left: auto;
+        top: 15px;
+    }
+    .carousel-indicators li {
+        height: 30px !important;
+        border-radius: 5px !important;
+        margin-bottom: 5px;
+        background-color: orangered;
+        text-indent: inherit;
+        width: 15% !important;
+        text-align: center;
+        color: #6c757d;
+        border-radius: 5px !important;
+    }
+    .carousel-indicators {
+        position: relative !important;
+    }
+    .carousel-caption h5 {
+        margin-top: 35px;
+        font-size: 50px;
+        color: rgb(0, 0, 0);
+    }
+    .w-100 {
+        border-radius: 10px;
+    }
+    .ButtonSlider {
+        background-color: orangered;
+        margin-right: 10px;
+        color: #fff;
+    }
+    .InspectButton {
+        height: fit-content;
+        background-color: #6c757d;
+        color: #fff;
+    }
+    .CardSlider {
+        display: inline;
+    }
+    .DealOfTheDay {
+        display: flex;
+        overflow: auto;
+    }
+    .card {
+        width: fit-content !important;
     }
 }
