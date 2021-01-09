@@ -315,14 +315,6 @@ input {
     margin-top: 50px;
 }
 
-.SlickSlider {
-    height: 55px;
-    width: 100%;
-    overflow: hidden;
-    margin-top: 20px;
-    display: none;
-}
-
 .CardHeader {
     display: grid;
     width: 100%;
@@ -354,6 +346,7 @@ a {
 
 .FooterTop {
     margin-top: 50px;
+    display: none;
 }
 
 ul {
@@ -404,6 +397,7 @@ h5 {
 
 .FooterMiddle {
     overflow: hidden;
+    margin-top: 50px;
 }
 
 .MiddleLeft {
@@ -442,11 +436,6 @@ h5 {
     right: 0;
 }
 
-
-/*.MainSlider {
-    display: none;
-}*/
-
 .RightNavMobile {
     display: flex;
     align-items: center;
@@ -472,6 +461,24 @@ h5 {
     background-color: #fff;
 }
 
+.carouselWrap2 {
+    display: none;
+}
+
+.carouselBucket {
+    width: 100%;
+}
+
+.bucket {
+    display: -webkit-box;
+    overflow: scroll;
+}
+
+.SlickImg {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 
 /*for mobile*/
 
@@ -494,9 +501,6 @@ h5 {
         float: left;
         text-align: start;
         margin-bottom: 20px;
-    }
-    .FooterTop {
-        display: none;
     }
     .logo {
         background-size: 60%;
@@ -529,7 +533,8 @@ h5 {
 @media (min-width: 780px) {
     .BottomNav,
     .BillboardMobile,
-    .HeaderMobile {
+    .HeaderMobile,
+    .FooterHeader {
         display: none;
     }
     input {
@@ -546,12 +551,6 @@ h5 {
         font-size: 25px;
         display: inline-table;
     }
-    .tekTik,
-    .iade,
-    .mobile,
-    .teslimat {
-        height: 245px;
-    }
     .FooterTopMobile,
     .FooterSolutionCenter {
         display: none !important;
@@ -560,9 +559,9 @@ h5 {
         display: block;
         margin-top: 50px;
     }
-    .carousel-indicators {
+    /*.carousel-indicators {
         top: 0 !important;
-    }
+    }*/
     .carousel-caption {
         background-color: rgba(240, 214, 180, 0.4);
         border-radius: 24px;
@@ -573,18 +572,17 @@ h5 {
         top: 15px;
     }
     .carousel-indicators li {
-        height: 30px !important;
+        height: 45px !important;
+        width: 60px !important;
         border-radius: 5px !important;
         margin-bottom: 5px;
-        background-color: orangered;
         text-indent: inherit;
-        width: 15% !important;
         text-align: center;
         color: #6c757d;
-        border-radius: 5px !important;
     }
     .carousel-indicators {
-        position: relative !important;
+        position: inherit !important;
+        margin-top: 15px;
     }
     .carousel-caption h5 {
         margin-top: 35px;
@@ -613,5 +611,29 @@ h5 {
     }
     .card {
         width: fit-content !important;
+    }
+    .shipping {
+        background-image: url(./kargo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+    }
+    .bucket {
+        overflow: hidden;
+    }
+    .prev,
+    .next {
+        width: 60px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 8px;
+    }
+    .prev {
+        background-image: url(./prev.svg);
+    }
+    .next {
+        background-image: url(./next.svg);
     }
 }
