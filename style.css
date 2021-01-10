@@ -311,14 +311,13 @@ input {
     border-radius: 5px;
 }
 
-.CardSlider {
+.CardSlider2 {
     margin-top: 50px;
 }
 
 .CardHeader {
     display: grid;
     width: 100%;
-    margin-top: 50px;
 }
 
 .DealOfTheDay {
@@ -333,6 +332,12 @@ input {
 .FooterHeadLink {
     float: right;
     text-align: end;
+}
+
+.ShippingMobile {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
 }
 
 .Logo {
@@ -401,28 +406,26 @@ h5 {
 }
 
 .MiddleLeft {
-    display: flex;
+    display: contents;
 }
 
 .FooterEnd {
-    background-image: url(./footer.png);
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 116px;
-    margin-bottom: 80px;
+    text-align: center;
+    margin: 50px 0;
 }
 
 .BottomNav {
-    overflow: hidden;
+    overflow: scroll;
     position: fixed;
     width: 100%;
-    bottom: 0;
+    z-index: 2;
+    bottom: 0 !important;
+    border: 1px solid gray;
 }
 
 .BottomNav,
 .a {
     float: left;
-    display: block;
     color: #f2f2f2;
     text-align: center;
     /*padding: 14px 16px;*/
@@ -461,6 +464,22 @@ h5 {
     background-color: #fff;
 }
 
+.nav {
+    flex-wrap: nowrap !important;
+}
+
+.nav-pills,
+.nav-link.active {
+    color: darkgray !important;
+    background-color: #fff !important;
+    font-weight: 700;
+    overflow: scroll;
+}
+
+.nav-link {
+    display: contents;
+}
+
 .carouselWrap2 {
     display: none;
 }
@@ -477,6 +496,13 @@ h5 {
 .SlickImg {
     overflow: hidden;
     border-radius: 10px;
+}
+
+.BackToTop {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    left: 39%;
 }
 
 
@@ -551,6 +577,11 @@ h5 {
         font-size: 25px;
         display: inline-table;
     }
+    .NavDeskop {
+        text-align: center;
+        font-size: 13px;
+        font-weight: 500;
+    }
     .FooterTopMobile,
     .FooterSolutionCenter {
         display: none !important;
@@ -622,18 +653,28 @@ h5 {
     .bucket {
         overflow: hidden;
     }
-    .prev,
-    .next {
-        width: 60px;
-        height: 45px;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-top: 8px;
+    .nav-pills,
+    .nav-link.active {
+        overflow: auto;
     }
-    .prev {
-        background-image: url(./prev.svg);
-    }
-    .next {
-        background-image: url(./next.svg);
+    .NavWrapper {
+        display: flex;
+        justify-content: center;
     }
 }
+
+
+/*.prev,
+ .next {
+     width: 60px;
+     height: 45px;
+     background-repeat: no-repeat;
+     background-position: center;
+     margin-top: 8px;
+ }
+ .prev {
+     background-image: url(./prev.svg);
+ }
+ .next {
+     background-image: url(./next.svg);
+ }/*
