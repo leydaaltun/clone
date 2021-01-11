@@ -432,11 +432,12 @@ h5 {
 
 .icon-bar {
     position: inherit;
-    margin-top: 101px;
+    margin-top: 30px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     display: flex;
+    justify-content: center;
 }
 
 .icon-bar a {
@@ -446,7 +447,8 @@ h5 {
     transition: all 0.3s ease;
     color: white;
     font-size: 20px;
-    width: 33%;
+    width: 20%;
+    border-radius: 50%;
 }
 
 .icon-bar a:hover {
@@ -663,19 +665,20 @@ h5 {
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
     .search {
         margin-top: 50px;
     }
     .icon-bar {
-        display: block;
-    }
-    .icon-bar a {
-        width: 100%;
+        display: flex;
     }
     .Logo,
     .logo {
         background-size: contain;
+    }
+    .icon-bar a {
+        height: fit-content;
+        width: -webkit-fill-available;
     }
 }
 
@@ -805,10 +808,11 @@ h5 {
     }
     .icon-bar {
         position: inherit;
-        margin-top: 35px;
+        margin-top: 40px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+        display: flex;
     }
 }
 
