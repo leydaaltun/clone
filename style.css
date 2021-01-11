@@ -524,8 +524,9 @@ h5 {
     .Logo,
     .FooterSolutionCenterDesk,
     .BillboardDeskop,
-    .HeaderDeskop,
-    .carousel-caption {
+    .HeaderDesktop,
+    .carousel-caption,
+    .FooterDesktop {
         display: none;
     }
     .search {
@@ -691,6 +692,9 @@ h5 {
     .NavWrapper {
         display: flex;
         justify-content: center;
+    }
+    .FooterDesktop {
+        margin-top: 50px;
     }
 }
 
