@@ -726,10 +726,14 @@ h5 {
     }
     .DealOfTheDay {
         display: flex;
-        overflow: auto;
+        overflow: inherit;
     }
     .card {
         width: fit-content !important;
+        transition: 0.5s all ease-in-out;
+    }
+    .card:hover {
+        transform: scale(1.2) !important;
     }
     .shipping {
         background-image: url(./kargo.png);
